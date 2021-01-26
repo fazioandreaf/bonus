@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+/* \Regole header */
+header,.jumbo,.row,footer {
+  width: 80vw;
+  margin: auto;
+  margin-top: 20px;
+}
+header img, .line {
+  max-width: calc(80px + 6vw);
+}
+.line {
+  width: 10px;
+  display: inline-block;
+  border-right: 2px solid black;
+  min-height: calc(40px + 2vw);
+}
+header ul {
+  list-style-type: none; /* rimuovo le decorazioni */
+  margin: 10px 0px;
+}
+header li {
+  display: inline-block;
+}
+header a {
+  text-decoration: none; /*rimuovo le decorazioni */
+  weight:bold;
+  color: lightgrey;
+  text-transform: uppercase;
+}
+header a:hover {
+  color: black;
+}
+/* regole jumbodrill */
+.img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.jumbo {
+  position: relative;
+  background-image: url(../img/banner.jpg);
+  height: 75vh;
+}
+.layover {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.jumbo *, .jumbo, .float-row .layover {
+  border-radius: 20px;
+}
+.text-on-jumbo {
+  position: absolute;
+  margin: 20px;
+  bottom: 0%;
+  color: white;
+}
+.text-on-jumbo h4 {
+  font-size: 20px;
+}
+/* regole per la row */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.float-row {
+  float: left;
+  margin-top: 3%;
+}
+.aside {
+  width: 27%;
+}
+.central {
+  margin: 3% 3%;
+  width: 40%;
+}
+.principal {
+  margin-right:3%;
+  width: 47%;
+}
+.row .principal:last-child{
+  margin-right:0%;
+  margin-left:3%;
+}
+.intestazione h5, .float-row span {
+  color: lightgrey;
+}
+.img-row {
+  height: 200px;
+}
+.img-central{
+  background-image: url(../img/banner-2.jpg);
+  margin-bottom: 10px;
+}
+.img-aside-left {
+  background-image: url(../img/img-1.jpg);
+  background-size: contain;
+}
+.img-aside-right {
+  background-image: url(../img/img-3.jpg);
+  background-size: contain;
+}
+footer {
+  height: 50px;
+  text-align: center;
+}
+footer::after {
+  content: "❤";
+  color:red;
+}
